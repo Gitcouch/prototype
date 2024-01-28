@@ -1,0 +1,36 @@
+.bienvedidos {
+    width: 100%;
+    padding-right: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.bienvedidos p {
+    font-size: 20px;
+}
+
+
+.cita {
+    font-size: 22px;
+    color: aliceblue;
+    background-color: rgb(161, 29, 29);
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 16px;
+    margin-top: 270px;
+}
+
+.testimonio .autor {
+    font-size: 10px;
+    text-align: center;
+    background-color: lightcoral;
+    display: block;
+    margin: 12px;
+}

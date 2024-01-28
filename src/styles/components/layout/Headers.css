@@ -1,0 +1,16 @@
+
+header {
+    background-color: #000407;
+    padding: 16px 0;
+    width: 100%;
+  }
+
+header div img {
+  margin-top: 10 10 10 10;
+    color: rgb(138, 136, 136);
+    font-size: 20px;
+    font-weight: 100px;
+    bottom: 35px;
+    justify-content: center;
+    align-self: auto;
+  }

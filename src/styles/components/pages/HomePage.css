@@ -1,30 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .bienvedidos {
-    width: 100%;
-    padding-right: 10px;
-    box-sizing: border-box;
+    font-size: 30px;
+    color: rgb(255, 240, 240);
     text-align: center;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 16px;
 }
 
 .columnas {
+    font-size: 30px;
+    color: rgb(255, 240, 240);
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 
-.bienvedidos p {
-    font-size: 20px;
+p {
+    font-size: 30px;
+    color: rgb(255, 240, 240);
+    text-align: center;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 16px;
 }
 
 
 .cita {
     font-size: 22px;
-    color: aliceblue;
-    background-color: rgb(161, 29, 29);
+    color: rgb(255, 240, 240);
+    text-align: center;
     display: block;
     text-align: center;
     width: 100%;
     padding: 16px;
-    margin-top: 270px;
+    margin-top: 160px;
 }
 
 .testimonio .autor {
@@ -34,3 +50,29 @@
     display: block;
     margin: 12px;
 }
+
+header {
+    width: 100%;
+}
+
+body {
+    background-color: rgb(32, 32, 32);
+}
+
+footer {
+    background-color: #050000;
+    font-size: 20px;
+    color: #615c5c;
+    text-align: center;
+    padding: 30px;
+    bottom: 0;
+    width: 100%;
+}
+
+img[src="/images/Home.png"] {
+    width: 100%; 
+    height: auto;
+    margin: 20px;
+    
+  }
+

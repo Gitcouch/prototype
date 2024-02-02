@@ -3,7 +3,6 @@ body {
     padding: 0;
 }
 
-
 .contacto {
     display: flex;
     gap: 24px;
@@ -14,11 +13,13 @@ body {
 }
 
 .datos p {
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .datos ul li {
-    font-size: 13px;
+    font-size: 20px;
+    color:#615c5c;
+    margin: 30px;
 }
 
 .formulario p {
@@ -64,6 +65,14 @@ body {
 
 .formulario input[type="submit"]:hover {
     background-color: #f704a2;
+    bottom: 100;
+}
+
+ul {
+
+    list-style-type: none;
+    margin-left: 90px;
+    padding: 0;
 }
 
 footer {
@@ -72,7 +81,6 @@ footer {
     color: #615c5c;
     text-align: center;
     padding: 30px;
-    position: absolute;
     bottom: 0;
     width: 100%;
 }

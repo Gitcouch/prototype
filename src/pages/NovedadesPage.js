@@ -4,14 +4,6 @@ import NovedadesItem from "../componets/novedades/NovedadItem";
 
 import "../styles/components/pages/NovedadesPage.css";
 
-// const NovedadesItem = ({ item }) => (
-//   <div>
-//     <h3>{item.titulo}</h3>
-//     <h4>{item.subtitulo}</h4>
-//     <p>{item.cuerpo}</p>
-//   </div>
-// );
-
 const NovedadesPage = () => {
   const [loading, setLoading] = useState(false);
   const [novedades, setNovedades] = useState([]);

@@ -1,12 +1,11 @@
 import React from "react"
-import '../../styles/components/layout/Footer.css';
+import './styles.css';
 
 const Footer = (props) => {
     return (
         <footer>
             <p>prototype ©</p>
         </footer>
-        
     )
 }
 export default Footer;

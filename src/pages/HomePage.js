@@ -2,7 +2,7 @@ import React from "react"
 import '../styles/components/pages/HomePage.css'
 
 
-const HomePage = (props) => {
+const HomePage = () => {
     return (
         <main>
             <img src="/images/Home.png" alt="prototype" />

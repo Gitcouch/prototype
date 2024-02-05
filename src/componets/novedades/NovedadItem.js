@@ -1,17 +1,21 @@
-import React from "react";
+// @ts-nocheck
+import React from 'react'
+import { Card } from 'antd'
 
-const NovedadItem = (props) => {
-  const { title, subtitle, imagen, body } = props;
+const { Meta } = Card
 
-  return (
-    <div className="novedad">
-      <h1>{title}</h1>
-      <h2>{subtitle}</h2>
-      <img src={imagen} alt="" />
-      <div dangerouslySetInnerHTML={{ __html: body }} />
-      <hr />
-    </div>
-  );
-};
+const NovedadItem = ({ title, subtitle, imagen, body }) => (
+  <Card hoverable style={{ width: 240 }} cover={<img alt='example' src={imagen} />}>
+    <Meta
+      title={title}
+      description={
+        <>
+          <div>{subtitle}</div>
+          <div dangerouslySetInnerHTML={{ __html: body }} />
+        </>
+      }
+    />
+  </Card>
+)
 
-export default NovedadItem;
+export default NovedadItem

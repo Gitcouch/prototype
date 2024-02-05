@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import axios from "axios";
 
 import "../styles/components/pages/ContactosPage.css";
+// @ts-ignore
+import axios from "axios";
 
-const ContactosPage = (props) => {
+const ContactosPage = () => {
   const initialForm = {
     nombre: "",
     email: "",
@@ -27,7 +28,7 @@ const ContactosPage = (props) => {
     e.preventDefault();
     setMsg("");
     setSending(true);
-    const response = await axios.get(
+    const response = await axios.post(
       "http://localhost:3000/api/contacto",
       formData
     );

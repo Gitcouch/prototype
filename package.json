@@ -29,10 +29,36 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "airbnb-base",
+    "env": {
+      "es6": true,
+      "browser": true
+    },
+    "rules": {
+      "brace-style": [
+        "error",
+        "stroustrup"
+      ],
+      "comma-dangle": [
+        "warn",
+        "never"
+      ],
+      "no-unused-vars": [
+        "warn"
+      ],
+      "no-var": [
+        "off"
+      ],
+      "one-var": [
+        "off"
+      ],
+      "linebreak-style": "off",
+      "semi": "off",
+      "camelcase": "off",
+      "no-console": "off",
+      "vars-on-top": "off",
+      "sort-imports": "warn"
+    }
   },
   "browserslist": {
     "production": [

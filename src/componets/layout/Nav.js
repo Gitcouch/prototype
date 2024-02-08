@@ -9,10 +9,10 @@ const Nav = () => {
         Home
       </NavLink>
       <NavLink to='/nosotros' className={({ isActive }) => (isActive ? 'active' : undefined)}>
-        Taller
+        Nosotros
       </NavLink>
       <NavLink to='/novedades' className={({ isActive }) => (isActive ? 'active' : undefined)}>
-        Ingresos
+        Novedades
       </NavLink>
       <NavLink to='/contacto' className={({ isActive }) => (isActive ? 'active' : undefined)}>
         Contacto

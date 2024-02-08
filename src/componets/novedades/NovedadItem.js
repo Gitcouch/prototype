@@ -5,7 +5,7 @@ import { Card } from 'antd'
 const { Meta } = Card
 
 const NovedadItem = ({ title, subtitle, imagen, body }) => (
-  <Card hoverable style={{ width: 240 }} cover={<img alt='example' src={imagen} />}>
+  <Card hoverable cover={<img alt='example' src={imagen} />}>
     <Meta
       title={title}
       description={

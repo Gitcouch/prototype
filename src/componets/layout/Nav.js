@@ -1,20 +1,24 @@
-import React from "react";
-import { NavLink } from "react-router-dom"
-import '../../styles/components/layout/Nav.css';
+import React from 'react'
+// @ts-ignore
+import { NavLink } from 'react-router-dom'
 
-const Nav = (props) => {
+const Nav = () => {
   return (
-    <nav>
-      <div>
-        <ul>
-          <li><NavLink to="/" className={({ isActive }) => isActive ? "activo" : undefined } >Home</NavLink></li>
-          <li><NavLink to="/Nosotros" className={({ isActive }) => isActive ? "activo" : undefined } >Nosotros</NavLink></li>
-          <li><NavLink to="/Novedades" className={({ isActive }) => isActive ? "activo" : undefined } >Novedades</NavLink></li>
-          <li><NavLink to="/Contacto" className={({ isActive }) => isActive ? "activo" : undefined } >Contacto</NavLink></li>
-        </ul>
-      </div>
+    <nav className='shadows'>
+      <NavLink to='/' className={({ isActive }) => (isActive ? 'active' : undefined)}>
+        Home
+      </NavLink>
+      <NavLink to='/nosotros' className={({ isActive }) => (isActive ? 'active' : undefined)}>
+        Taller
+      </NavLink>
+      <NavLink to='/novedades' className={({ isActive }) => (isActive ? 'active' : undefined)}>
+        Ingresos
+      </NavLink>
+      <NavLink to='/contacto' className={({ isActive }) => (isActive ? 'active' : undefined)}>
+        Contacto
+      </NavLink>
     </nav>
-  );
+  )
 }
 
-export default Nav;
+export default Nav

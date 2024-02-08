@@ -1,41 +1,262 @@
-/* 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 header {
-  background-color: #2e64a1;
-  padding: 16px 0;
   width: 100%;
-  text-align:center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
 }
 
-div {
-margin-top: 10;
-  color: white;
-  font-size: 20px;
-  font-weight: 100px;
-  font-style: italic;
-  bottom: 35px;
+header h1 {
+  color: var(--primary-color-light);
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+}
+
+header h1:hover {
+  color: rgb(246, 99, 99);
+  font-size: 10rem;
+  transition: all ease-in-out 1000ms;
+}
+
+.header_brand {
+  padding: 1rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  width: 100%;
+  display: flex;
   justify-content: center;
-  align-self: auto;
+  align-items: center;
+  background-color: rgb(170, 15, 93);
 }
 
-header div img {
-margin-top: 10;
-  font-size: 20px;
-  font-weight: 100px;
-  font-style: italic;
-  bottom: 35px;
+nav a {
+  display: flex;
+  flex: 1;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+  display: block;
+  text-align: center;
+  transition: all ease-in-out 300ms;
 }
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav a.active {
+  background-color: rgb(199, 6, 64);
+}
+
+/* ............................................................. */
+
+main {
+  display: flex;
+  flex: 1;
+}
+
+#homePage {
+  flex-direction: column;
+}
+
+#homePage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#homePage .content {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  flex: 1;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  min-height: 20rem;
+}
+
+#homePage .content :hover {
+  color: rgb(51, 50, 50);
+  font-size: 3.5rem;
+  transition: all ease-in-out 900ms;
+}
+
+#homePage .content :hover {
+  color: rgb(87, 86, 86);
+  font-size: 4rem;
+  transition: all ease-in-out 1800ms;
+}
+
+#homePage .content p,
+#homePage .content blockquote {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#homePage .content p {
+  color: var(--tertiary-color-dark);
+  font-size: 5rem;
+}
+
+#homePage .content blockquote {
+  font-size: 1.5rem;
+  color: rgb(101, 100, 100);
+  margin-bottom: 3rem;
+}
+
+.redLine {
+  width: 100%;
+  height: 0.35rem;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* ............................................................. */
+
+#nosotrosPage {
+  background-color: black;
+  color: rgb(142, 142, 142);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#nosotrosPage {
+  background-color: black;
+  color: rgb(142, 142, 142);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#nosotrosPage .historia h2 {
+  font-size: 2.5rem;
+  color: rgb(153, 152, 152);
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-gallery {
+  margin-top: 0rem;
+  display: flex;
+  height: 27rem;
+  width: 100%;
+}
+
+.image-gallery img {
+  margin-right: 0px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 27rem;
+}
+
+.ant-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  max-height: 10rem;
+  overflow-y: auto;
+}
+
+/* ............................................................. */
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.encabezado {
+  color: #fff;
+  padding: 10px;
+  margin-left: 4.5rem;
+}
+
+
+form {
+  width: 50rem;
+  margin-left: 5rem;
+}
+
+.formulario__input {
+  background-color: rgb(198, 196, 196);
+  border-radius: 0.25rem;
+  padding-left: 0.65rem;
+  font-size: 0.85rem;
+  color: #000000;
+  display: flex;
+  width: 85%;
+  height: 1.75rem;
+  margin-bottom: 10px;
+}
+
+input[type='submit'] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+
+input[type='submit']:hover {
+  background-color: #0056b3;
+  border-radius: 0.25rem;
+}
+
+
+.datos {
+  display: flex;
+  margin: 1rem;
+  width: 50rem;
+  margin: 5rem;
+  color: blanchedalmond;
+}
+
+
+
+
+
 
 footer {
-  background-color: #ccc;
-  color: #333;
+  background-color: #212121;
+  margin-top: 2rem;
   text-align: center;
-  padding: 30px;
-  position: absolute;
-  bottom: 0;
+  padding: 3rem;
   width: 100%;
-} */
+  height: 10rem;
+}
+
+footer h3 {
+  color: #bdb8b8;
+  text-align: center;
+  font-size: 1, 25rem;
+  padding: 1rem;
+}

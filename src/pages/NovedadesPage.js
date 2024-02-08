@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import NovedadesItem from '../componets/novedades/NovedadItem'
 
-import '../styles/components/pages/NovedadesPage.css'
 import { Flex, Spin } from '../../node_modules/antd/es/index'
 
 const NovedadesPage = () => {
@@ -15,7 +14,6 @@ const NovedadesPage = () => {
       setLoading(true)
       try {
         const response = await axios.get(
-          // `${process.env.REACT_APP_API_URL}/api/novedades`
           'http://localhost:3000/api/novedades',
         )
         setNovedades(response.data)
@@ -29,12 +27,13 @@ const NovedadesPage = () => {
   }, [])
 
   return (
-    <section className='holder'>
+    <main>
+      <div className='card'>
       <h2>Novedades</h2>
       {loading ? (
         <Spin tip='Cargando...' />
       ) : (
-        <Flex style={{ gap: '1rem' }}>
+        <Flex style={{ gap: '0.8rem', maxheigth: '0rem' }}>
           {novedades.map(item => (
             <NovedadesItem
               key={item.id}
@@ -46,7 +45,8 @@ const NovedadesPage = () => {
           ))}
         </Flex>
       )}
-    </section>
+      </div>
+    </main>
   )
 }
 

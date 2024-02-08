@@ -1,22 +1,20 @@
-import React from "react"
-import '../styles/components/pages/HomePage.css'
+import React from 'react';
 
-
-const HomePage = () => {
+class HomePage extends React.Component {
+  render() {
     return (
-        <main>
-            <img src="/images/Home.png" alt="prototype" />
-            <div className="colunas">
-                <div className="bienvenidos">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quasi.
-                    </p>
-                </div>
-                <div>
-                    <span className="cita">prototype Ride is only way</span>
-                </div>
-            </div>
-        </main>
-    )
+      <main id='homePage'>
+        <img src='/Stories.jpg' alt='prototype' style={{ width: '100vw', height: 'auto', display: 'block' }} />
+        <div className='content'>
+          <p>Ride is only way</p>
+          <div>
+            <span className='blockquote'>prototype taller de bicicletas</span>
+          </div>
+        </div>
+          <div className='redLine'></div>
+      </main>
+    );
+  }
 }
+
 export default HomePage;
